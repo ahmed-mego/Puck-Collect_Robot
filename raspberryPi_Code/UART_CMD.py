@@ -1,4 +1,3 @@
-
 import serial
 import time
 
@@ -16,7 +15,7 @@ def send_multiple_hex_commands_serial(ser, hex_commands):
         ser.write(command_bytes)
         
         # Read response (optional, depending on the device)
-        time.sleep(300/1000)  # Wait for the device to respond
+        #time.sleep(1)  # Wait for the device to respond
         response = ser.read(ser.in_waiting)
         print(f'Sent: {hex_command}, Received response: {response.hex()}') 
 
@@ -60,42 +59,21 @@ serial_port = 'COM5'  # Replace with your serial port
 baud_rate = 9600              # Replace with the appropriate baud rate
 ser = Init_Serial(serial_port,baud_rate)
 
+dc_Max_speed = 0
+dc_Min_speed = 65535
+dc_haf_speed = 32768
+forward = 0
+backward = 1
 
-"""
-
-['AA 00 00 00 01 f4', 'AA 00 00 01 01 f4', 'AA 01 00 00 01 f4',
-
-
- 'AA 01 00 01 01 f4', 'AA 02 00 01 ff ff', 'AA 03 00 01 ff ff', 
- 
- 
- 'AA 02 00 01 80 00', 'AA 03 00 01 80 00', 'AA 02 00 01 ff ff',
- 'AA 03 00 01 ff ff', 'AA 02 00 00 80 00',
-
- 'AA 03 00 00 80 00', 'AA 02 00 00 ff ff', 'AA 03 00 00 ff ff']
-hex_commands = []
-
-Cerate_StepperCommand(00,500,1)
-"""
-hex_commands = [
-Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)
-,Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)
-,Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)
-,Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)
-,Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)]
+#motor id 3 dc_motor2 
+hex_commands1 = [Cerate_DcCommand(3,dc_haf_speed,forward) , Cerate_DcCommand(2,dc_haf_speed,backward)]
+hex_commands2 = [Cerate_DcCommand(3,dc_Min_speed,forward) , Cerate_DcCommand(2,dc_Min_speed,forward)]
+#,Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)
+#,Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)
+#,Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)
+#,Cerate_StepperCommand(00,500,1) , Cerate_StepperCommand(0,500,0)]
 
 
-"""
-for comand in range(len(hex_commands)):
-    val = array_checksum(hex_commands[comand].split())
-    hex_commands[comand] = hex_commands[comand]+" "+val+" 55"
-    
-#hex_commands = ['AA 00 00 01 01 f4 5e 55']
-send_multiple_hex_commands_serial(ser, hex_commands)
-
-hex_commands = ['AA 02 00 01 80 00', 'AA 02 00 01 ff ff']
-for comand in range(len(hex_commands)):
-    val = array_checksum(hex_commands[comand].split())
-    hex_commands[comand] = hex_commands[comand]+" "+val+" 55"
-"""
-send_multiple_hex_commands_serial(ser, hex_commands)
+send_multiple_hex_commands_serial(ser, hex_commands1)
+time.sleep(1)
+send_multiple_hex_commands_serial(ser, hex_commands2)

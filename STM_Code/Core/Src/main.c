@@ -164,7 +164,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
 
 		 HAL_UART_Receive_IT(&huart1,(uint8_t*)&it_char, 1);
 		 uart_buffer[buffer_counter] = it_char;
-		 HAL_UART_Transmit(&huart1, (uint8_t*)&uart_buffer[buffer_counter], 1, 100);
+		 //HAL_UART_Transmit(&huart1, (uint8_t*)&uart_buffer[buffer_counter], 1, 100);
 		 if(buffer_counter < uart_buffer_size-1)
 		 buffer_counter++;
 		 else
@@ -218,7 +218,7 @@ uint8_t Decode_Pi_CMD(uint8_t buffer[], uint8_t size)
 
 	if (buffer[1] == 3)
 	{
-		uint8_t dir = buffer[2];
+		uint8_t dir = buffer[3];
 		uint16_t pwm  = (((uint16_t)buffer[4]) << 8) | buffer[5];
 		dcMotor_2(dir, pwm);
 	}
