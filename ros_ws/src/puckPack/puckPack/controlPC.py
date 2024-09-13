@@ -30,7 +30,7 @@ def main(args=None):
     controlPc = controlPcPublisher()
     motor_speed_high = 0
     motor_speed_low = 65535
-    motor_speed_half = 65535
+    motor_speed_half = 32767
     
     msg = CtrlInterface()
     msg.r_motor = motor_speed_low
@@ -44,6 +44,7 @@ def main(args=None):
     
     while rclpy.ok():
         if the_pressedkey == "w":
+            the_pressedkey = "x"
             msg.r_motor = motor_speed_half
             msg.l_motor = motor_speed_half
             controlPc.publish(msg)
@@ -51,8 +52,9 @@ def main(args=None):
             msg.r_motor = motor_speed_low
             msg.l_motor = motor_speed_low
             controlPc.publish(msg)
-            the_pressedkey == "x"
-        if the_pressedkey == "s":
+            
+        elif the_pressedkey == "s":
+            the_pressedkey = "x"
             msg.r_motor = motor_speed_half*-1
             msg.l_motor = motor_speed_half*-1
             controlPc.publish(msg)
@@ -60,34 +62,40 @@ def main(args=None):
             msg.r_motor = motor_speed_low
             msg.l_motor = motor_speed_low
             controlPc.publish(msg)
-            the_pressedkey == "x"
-        if the_pressedkey == "a":
-            msg.r_motor = motor_speed_half*1
+            
+        elif the_pressedkey == "a":
+            the_pressedkey = "x"
+            msg.r_motor = motor_speed_half
             msg.l_motor = motor_speed_half*-1
             controlPc.publish(msg)
             sleep(0.1)
             msg.r_motor = motor_speed_low
             msg.l_motor = motor_speed_low
-            the_pressedkey == "x"
-        if the_pressedkey == "d":
+            controlPc.publish(msg)
+        elif the_pressedkey == "d":
+            the_pressedkey = "x"
             msg.r_motor = motor_speed_half*-1
-            msg.l_motor = motor_speed_half*1
+            msg.l_motor = motor_speed_half
             controlPc.publish(msg)
             sleep(0.1)
             msg.r_motor = motor_speed_low
             msg.l_motor = motor_speed_low
-            the_pressedkey == "x"
-        if the_pressedkey == "m":
+            controlPc.publish(msg)
+            
+        elif the_pressedkey == "m":
+            the_pressedkey = "x"
             msg.g_stepper = (msg.g_stepper+1) % 2 
             controlPc.publish(msg)
             sleep(1)
-            the_pressedkey == "x"
-        if the_pressedkey == "n":
+            
+        elif the_pressedkey == "n":
+            the_pressedkey = "x"
             msg.s_stepper = (msg.s_stepper+1) % 3
             controlPc.publish(msg)
             sleep(1)
-            the_pressedkey == "x"
+            
             controlPc.publish(msg)
+
             # Destroy the node explicitly
     # when the garbage collector destroys the node object)
     controlPcPublisher.destroy_node()

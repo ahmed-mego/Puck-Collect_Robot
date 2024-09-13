@@ -142,9 +142,9 @@ class CommandSubscriber(Node):
             self.last_s_stepper = msg.s_stepper
         if msg.r_motor != self.last_r_motor:
             if msg.r_motor < 0:
-                hex_commands.append(Cerate_DcCommand(2,abs(msg.r_motor),1))
+                hex_commands.append(Cerate_DcCommand(3,abs(msg.r_motor),1))
             else:
-                hex_commands.append(Cerate_DcCommand(2,abs(msg.r_motor),0))
+                hex_commands.append(Cerate_DcCommand(3,abs(msg.r_motor),0))
             self.last_r_motor = msg.r_motor
         if msg.l_motor != self.last_l_motor:
             if msg.l_motor < 0:
