@@ -13,6 +13,7 @@ puckPack/UartCommander.py
 puckPack/__init__.py
 puckPack/controlPC.py
 puckPack/mainCamera.py
+puckPack/rpiCamera.py
 resource/puckPack
 test/test_copyright.py
 test/test_flake8.py

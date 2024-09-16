@@ -22,7 +22,9 @@ setup(
         'console_scripts': [
         'UartCommander = puckPack.UartCommander:main'
         ,
-        'controlPC = puckPack.controlPC:main'        
+        'controlPC = puckPack.controlPC:main' 
+        ,
+        'rpiCamera = puckPack.rpiCamera:main' 
         ],
     },
 )
