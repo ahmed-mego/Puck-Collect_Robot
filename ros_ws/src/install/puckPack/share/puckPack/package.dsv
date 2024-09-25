@@ -1,6 +1,0 @@
-source;share/puckPack/hook/pythonpath.ps1
-source;share/puckPack/hook/pythonpath.dsv
-source;share/puckPack/hook/pythonpath.sh
-source;share/puckPack/hook/ament_prefix_path.ps1
-source;share/puckPack/hook/ament_prefix_path.dsv
-source;share/puckPack/hook/ament_prefix_path.sh

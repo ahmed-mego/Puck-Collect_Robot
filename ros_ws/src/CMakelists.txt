@@ -1,9 +1,0 @@
-find_package(msg REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
-
-rosidl_generate_interfaces($(PROJECT_NAME)
-	"msg/right_motor"
-	"msg/lift_motor"
-	"msg/gate_motor"
-	"msg/sorter_motor"
-	DEPENDENCIES msg
