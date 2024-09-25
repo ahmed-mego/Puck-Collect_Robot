@@ -1,0 +1,147 @@
+[0.197s] Invoking command in '/home/asme/ros_ws/build/ctrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/asme/ros_ws/build/ctrl_interface -- -j4 -l4
+[1.524s] [  2%] Built target ctrl_interface__rosidl_generator_type_description
+[1.708s] [  2%] Built target ament_cmake_python_copy_ctrl_interface
+[1.856s] [  5%] Built target ctrl_interface__cpp
+[2.081s] [ 20%] Built target ctrl_interface__rosidl_generator_c
+[2.769s] [ 29%] Built target ctrl_interface__rosidl_typesupport_cpp
+[2.854s] [ 38%] Built target ctrl_interface__rosidl_typesupport_fastrtps_cpp
+[2.877s] [ 47%] Built target ctrl_interface__rosidl_typesupport_fastrtps_c
+[3.313s] [ 55%] Built target ctrl_interface__rosidl_typesupport_c
+[3.342s] [ 64%] Built target ctrl_interface__rosidl_typesupport_introspection_c
+[3.439s] [ 73%] Built target ctrl_interface__rosidl_typesupport_introspection_cpp
+[3.774s] [ 73%] Built target ctrl_interface
+[4.129s] [ 76%] Built target ctrl_interface__py
+[4.644s] [ 82%] Built target ctrl_interface__rosidl_generator_py
+[5.075s] [ 88%] Built target ctrl_interface_s__rosidl_typesupport_fastrtps_c
+[5.086s] [ 94%] Built target ctrl_interface_s__rosidl_typesupport_c
+[5.103s] [100%] Built target ctrl_interface_s__rosidl_typesupport_introspection_c
+[5.349s] running egg_info
+[5.658s] writing ctrl_interface.egg-info/PKG-INFO
+[5.659s] writing dependency_links to ctrl_interface.egg-info/dependency_links.txt
+[5.664s] writing top-level names to ctrl_interface.egg-info/top_level.txt
+[6.552s] reading manifest file 'ctrl_interface.egg-info/SOURCES.txt'
+[6.563s] writing manifest file 'ctrl_interface.egg-info/SOURCES.txt'
+[6.872s] [100%] Built target ament_cmake_python_build_ctrl_interface_egg
+[7.023s] Invoked command in '/home/asme/ros_ws/build/ctrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/asme/ros_ws/build/ctrl_interface -- -j4 -l4
+[8.207s] Invoking command in '/home/asme/ros_ws/build/ctrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/asme/ros_ws/build/ctrl_interface
+[8.319s] -- Install configuration: ""
+[8.322s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ament_index/resource_index/rosidl_interfaces/ctrl_interface
+[8.325s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/msg/CtrlInterface.json
+[8.327s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface
+[8.329s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg
+[8.331s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail
+[8.334s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__functions.c
+[8.335s] -- Installing: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.c
+[8.339s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__struct.h
+[8.345s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__functions.h
+[8.347s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__description.c
+[8.348s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.h
+[8.349s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/ctrl_interface.h
+[8.351s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_generator_c__visibility_control.h
+[8.353s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/library_path.sh
+[8.355s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/library_path.dsv
+[8.358s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_generator_c.so
+[8.359s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface
+[8.361s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg
+[8.363s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.366s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail
+[8.367s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__rosidl_typesupport_fastrtps_c.h
+[8.369s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_fastrtps_c.so
+[8.370s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface
+[8.373s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg
+[8.375s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.377s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail
+[8.379s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__struct.hpp
+[8.381s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__traits.hpp
+[8.382s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__builder.hpp
+[8.383s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.hpp
+[8.384s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/ctrl_interface.hpp
+[8.385s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface
+[8.386s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg
+[8.387s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.389s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail
+[8.390s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/dds_fastrtps
+[8.391s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__rosidl_typesupport_fastrtps_cpp.hpp
+[8.392s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_fastrtps_cpp.so
+[8.397s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface
+[8.399s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg
+[8.401s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.404s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail
+[8.406s] -- Installing: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.c
+[8.413s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__rosidl_typesupport_introspection_c.h
+[8.415s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_introspection_c.so
+[8.427s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_c.so
+[8.433s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface
+[8.436s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg
+[8.438s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail
+[8.440s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__rosidl_typesupport_introspection_cpp.hpp
+[8.442s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.cpp
+[8.444s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_introspection_cpp.so
+[8.455s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_cpp.so
+[8.459s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/pythonpath.sh
+[8.461s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/pythonpath.dsv
+[8.463s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info
+[8.464s] -- Installing: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info/SOURCES.txt
+[8.473s] -- Installing: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info/top_level.txt
+[8.476s] -- Installing: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info/PKG-INFO
+[8.480s] -- Installing: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info/dependency_links.txt
+[8.484s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface
+[8.487s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/__init__.py
+[8.491s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg
+[8.492s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg/_ctrl_interface.py
+[8.496s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg/__init__.py
+[8.497s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg/_ctrl_interface_s.c
+[8.498s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_introspection_c.so
+[8.502s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_fastrtps_c.so
+[8.503s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_c.so
+[8.507s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/_ctrl_interface_s.ep.rosidl_typesupport_c.c
+[8.509s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/_ctrl_interface_s.ep.rosidl_typesupport_introspection_c.c
+[8.513s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/_ctrl_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.944s] Listing '/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface'...
+[8.950s] Listing '/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg'...
+[9.006s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_fastrtps_c.so
+[9.020s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_introspection_c.so
+[9.025s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_c.so
+[9.035s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_generator_py.so
+[9.042s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/msg/CtrlInterface.idl
+[9.043s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/msg/CtrlInterface.msg
+[9.051s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ament_index/resource_index/package_run_dependencies/ctrl_interface
+[9.052s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ament_index/resource_index/parent_prefix_path/ctrl_interface
+[9.053s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/ament_prefix_path.sh
+[9.057s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/ament_prefix_path.dsv
+[9.066s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/path.sh
+[9.067s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/path.dsv
+[9.069s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/local_setup.bash
+[9.072s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/local_setup.sh
+[9.073s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/local_setup.zsh
+[9.074s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/local_setup.dsv
+[9.076s] -- Installing: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.dsv
+[9.078s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ament_index/resource_index/packages/ctrl_interface
+[9.079s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_cExport.cmake
+[9.080s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_cExport-noconfig.cmake
+[9.088s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[9.090s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.092s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_cppExport.cmake
+[9.098s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.101s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.105s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_introspection_cExport.cmake
+[9.110s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.115s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_cExport.cmake
+[9.118s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_cExport-noconfig.cmake
+[9.124s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_introspection_cppExport.cmake
+[9.134s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.136s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_cppExport.cmake
+[9.141s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[9.151s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_pyExport.cmake
+[9.158s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_pyExport-noconfig.cmake
+[9.162s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/rosidl_cmake-extras.cmake
+[9.163s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.166s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.168s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[9.171s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ament_cmake_export_targets-extras.cmake
+[9.173s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.174s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.175s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interfaceConfig.cmake
+[9.177s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interfaceConfig-version.cmake
+[9.178s] -- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.xml
+[9.199s] Invoked command in '/home/asme/ros_ws/build/ctrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/asme/ros_ws/build/ctrl_interface

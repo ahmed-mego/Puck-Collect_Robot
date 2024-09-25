@@ -1,0 +1,308 @@
+[0.000000] (-) TimerEvent: {}
+[0.001665] (ctrl_interface) JobQueued: {'identifier': 'ctrl_interface', 'dependencies': OrderedDict()}
+[0.002710] (puckPack) JobQueued: {'identifier': 'puckPack', 'dependencies': OrderedDict({'ctrl_interface': '/home/asme/ros_ws/install/ctrl_interface'})}
+[0.002960] (ctrl_interface) JobStarted: {'identifier': 'ctrl_interface'}
+[0.061288] (ctrl_interface) JobProgress: {'identifier': 'ctrl_interface', 'progress': 'cmake'}
+[0.067502] (ctrl_interface) JobProgress: {'identifier': 'ctrl_interface', 'progress': 'build'}
+[0.070836] (ctrl_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asme/ros_ws/build/ctrl_interface', '--', '-j4', '-l4'], 'cwd': '/home/asme/ros_ws/build/ctrl_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'asme', 'SSH_CLIENT': '10.0.0.1 45604 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/asme', 'OLDPWD': '/home/asme/ros_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'asme', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/asme/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/asme/ros_ws/build/ctrl_interface', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.1 45604 10.0.0.148 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099226] (-) TimerEvent: {}
+[0.201040] (-) TimerEvent: {}
+[0.301903] (-) TimerEvent: {}
+[0.402839] (-) TimerEvent: {}
+[0.503595] (-) TimerEvent: {}
+[0.604520] (-) TimerEvent: {}
+[0.705643] (-) TimerEvent: {}
+[0.797835] (ctrl_interface) StdoutLine: {'line': b'[  2%] Built target ctrl_interface__rosidl_generator_type_description\n'}
+[0.805807] (-) TimerEvent: {}
+[0.872893] (ctrl_interface) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_ctrl_interface\n'}
+[0.906027] (-) TimerEvent: {}
+[0.941361] (ctrl_interface) StdoutLine: {'line': b'[  5%] Built target ctrl_interface__cpp\n'}
+[0.982224] (ctrl_interface) StdoutLine: {'line': b'[ 20%] Built target ctrl_interface__rosidl_generator_c\n'}
+[1.006449] (-) TimerEvent: {}
+[1.107058] (-) TimerEvent: {}
+[1.186743] (ctrl_interface) StdoutLine: {'line': b'[ 29%] Built target ctrl_interface__rosidl_typesupport_cpp\n'}
+[1.187601] (ctrl_interface) StdoutLine: {'line': b'[ 38%] Built target ctrl_interface__rosidl_typesupport_fastrtps_c\n'}
+[1.189704] (ctrl_interface) StdoutLine: {'line': b'[ 47%] Built target ctrl_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[1.207358] (-) TimerEvent: {}
+[1.308564] (-) TimerEvent: {}
+[1.352606] (ctrl_interface) StdoutLine: {'line': b'[ 55%] Built target ctrl_interface__rosidl_typesupport_introspection_c\n'}
+[1.356689] (ctrl_interface) StdoutLine: {'line': b'[ 64%] Built target ctrl_interface__rosidl_typesupport_c\n'}
+[1.370298] (ctrl_interface) StdoutLine: {'line': b'[ 73%] Built target ctrl_interface__rosidl_typesupport_introspection_cpp\n'}
+[1.408755] (-) TimerEvent: {}
+[1.490726] (ctrl_interface) StdoutLine: {'line': b'[ 73%] Built target ctrl_interface\n'}
+[1.508934] (-) TimerEvent: {}
+[1.609579] (-) TimerEvent: {}
+[1.619025] (ctrl_interface) StdoutLine: {'line': b'[ 76%] Built target ctrl_interface__py\n'}
+[1.709778] (-) TimerEvent: {}
+[1.791618] (ctrl_interface) StdoutLine: {'line': b'[ 82%] Built target ctrl_interface__rosidl_generator_py\n'}
+[1.809982] (-) TimerEvent: {}
+[1.911578] (-) TimerEvent: {}
+[1.946918] (ctrl_interface) StdoutLine: {'line': b'[ 94%] Built target ctrl_interface_s__rosidl_typesupport_introspection_c\n'}
+[1.948082] (ctrl_interface) StdoutLine: {'line': b'[ 94%] Built target ctrl_interface_s__rosidl_typesupport_fastrtps_c\n'}
+[1.954371] (ctrl_interface) StdoutLine: {'line': b'[100%] Built target ctrl_interface_s__rosidl_typesupport_c\n'}
+[2.011762] (-) TimerEvent: {}
+[2.112316] (-) TimerEvent: {}
+[2.197209] (ctrl_interface) StdoutLine: {'line': b'running egg_info\n'}
+[2.212498] (-) TimerEvent: {}
+[2.301803] (ctrl_interface) StdoutLine: {'line': b'writing ctrl_interface.egg-info/PKG-INFO\n'}
+[2.302995] (ctrl_interface) StdoutLine: {'line': b'writing dependency_links to ctrl_interface.egg-info/dependency_links.txt\n'}
+[2.306093] (ctrl_interface) StdoutLine: {'line': b'writing top-level names to ctrl_interface.egg-info/top_level.txt\n'}
+[2.312644] (-) TimerEvent: {}
+[2.413187] (-) TimerEvent: {}
+[2.513792] (-) TimerEvent: {}
+[2.607079] (ctrl_interface) StdoutLine: {'line': b"reading manifest file 'ctrl_interface.egg-info/SOURCES.txt'\n"}
+[2.610530] (ctrl_interface) StdoutLine: {'line': b"writing manifest file 'ctrl_interface.egg-info/SOURCES.txt'\n"}
+[2.614128] (-) TimerEvent: {}
+[2.715108] (-) TimerEvent: {}
+[2.765283] (ctrl_interface) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_ctrl_interface_egg\n'}
+[2.815325] (-) TimerEvent: {}
+[2.823590] (ctrl_interface) CommandEnded: {'returncode': 0}
+[2.915574] (-) TimerEvent: {}
+[3.017322] (-) TimerEvent: {}
+[3.118114] (-) TimerEvent: {}
+[3.218888] (-) TimerEvent: {}
+[3.277701] (ctrl_interface) JobProgress: {'identifier': 'ctrl_interface', 'progress': 'install'}
+[3.319078] (-) TimerEvent: {}
+[3.328969] (ctrl_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asme/ros_ws/build/ctrl_interface'], 'cwd': '/home/asme/ros_ws/build/ctrl_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'asme', 'SSH_CLIENT': '10.0.0.1 45604 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/asme', 'OLDPWD': '/home/asme/ros_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'asme', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/asme/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/asme/ros_ws/build/ctrl_interface', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.1 45604 10.0.0.148 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.380300] (ctrl_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.383804] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ament_index/resource_index/rosidl_interfaces/ctrl_interface\n'}
+[3.385513] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/msg/CtrlInterface.json\n'}
+[3.387031] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface\n'}
+[3.388035] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg\n'}
+[3.389154] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail\n'}
+[3.390409] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__functions.c\n'}
+[3.391197] (ctrl_interface) StdoutLine: {'line': b'-- Installing: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.c\n'}
+[3.393734] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__struct.h\n'}
+[3.394464] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__functions.h\n'}
+[3.395246] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__description.c\n'}
+[3.395850] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.h\n'}
+[3.396625] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/ctrl_interface.h\n'}
+[3.397540] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.398160] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/library_path.sh\n'}
+[3.398945] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/library_path.dsv\n'}
+[3.404708] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_generator_c.so\n'}
+[3.406060] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface\n'}
+[3.406719] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg\n'}
+[3.407227] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.407862] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail\n'}
+[3.408314] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__rosidl_typesupport_fastrtps_c.h\n'}
+[3.411590] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[3.413312] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface\n'}
+[3.414092] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg\n'}
+[3.414860] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.415655] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail\n'}
+[3.416215] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__struct.hpp\n'}
+[3.416922] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__traits.hpp\n'}
+[3.417657] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__builder.hpp\n'}
+[3.418216] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.hpp\n'}
+[3.418975] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/ctrl_interface.hpp\n'}
+[3.419678] (-) TimerEvent: {}
+[3.420107] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface\n'}
+[3.420863] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg\n'}
+[3.421476] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.421969] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail\n'}
+[3.422541] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/dds_fastrtps\n'}
+[3.423076] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.424720] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.426131] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface\n'}
+[3.426771] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg\n'}
+[3.427366] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.427818] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail\n'}
+[3.428355] (ctrl_interface) StdoutLine: {'line': b'-- Installing: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.c\n'}
+[3.430480] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__rosidl_typesupport_introspection_c.h\n'}
+[3.434166] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_introspection_c.so\n'}
+[3.438733] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_c.so\n'}
+[3.440117] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface\n'}
+[3.440823] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg\n'}
+[3.441356] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail\n'}
+[3.442049] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.442646] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/include/ctrl_interface/ctrl_interface/msg/detail/ctrl_interface__type_support.cpp\n'}
+[3.445699] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[3.450769] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_typesupport_cpp.so\n'}
+[3.452363] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/pythonpath.sh\n'}
+[3.453128] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/pythonpath.dsv\n'}
+[3.454708] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info\n'}
+[3.455964] (ctrl_interface) StdoutLine: {'line': b'-- Installing: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[3.457646] (ctrl_interface) StdoutLine: {'line': b'-- Installing: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[3.459173] (ctrl_interface) StdoutLine: {'line': b'-- Installing: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[3.460777] (ctrl_interface) StdoutLine: {'line': b'-- Installing: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[3.462408] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface\n'}
+[3.463641] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/__init__.py\n'}
+[3.464264] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg\n'}
+[3.465011] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg/_ctrl_interface.py\n'}
+[3.465583] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg/__init__.py\n'}
+[3.466099] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg/_ctrl_interface_s.c\n'}
+[3.466650] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_introspection_c.so\n'}
+[3.467199] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.467782] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_c.so\n'}
+[3.468278] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/_ctrl_interface_s.ep.rosidl_typesupport_c.c\n'}
+[3.468759] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/_ctrl_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.469143] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/_ctrl_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.519831] (-) TimerEvent: {}
+[3.620399] (-) TimerEvent: {}
+[3.648075] (ctrl_interface) StdoutLine: {'line': b"Listing '/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface'...\n"}
+[3.649460] (ctrl_interface) StdoutLine: {'line': b"Listing '/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/msg'...\n"}
+[3.683126] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.688235] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_introspection_c.so\n'}
+[3.693577] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages/ctrl_interface/ctrl_interface_s__rosidl_typesupport_c.so\n'}
+[3.698465] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/lib/libctrl_interface__rosidl_generator_py.so\n'}
+[3.700114] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/msg/CtrlInterface.idl\n'}
+[3.700898] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/msg/CtrlInterface.msg\n'}
+[3.702040] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ament_index/resource_index/package_run_dependencies/ctrl_interface\n'}
+[3.703351] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ament_index/resource_index/parent_prefix_path/ctrl_interface\n'}
+[3.704083] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/ament_prefix_path.sh\n'}
+[3.704724] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/ament_prefix_path.dsv\n'}
+[3.705328] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/path.sh\n'}
+[3.705967] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/environment/path.dsv\n'}
+[3.706665] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/local_setup.bash\n'}
+[3.707168] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/local_setup.sh\n'}
+[3.707863] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/local_setup.zsh\n'}
+[3.708364] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/local_setup.dsv\n'}
+[3.709106] (ctrl_interface) StdoutLine: {'line': b'-- Installing: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.dsv\n'}
+[3.711374] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ament_index/resource_index/packages/ctrl_interface\n'}
+[3.715815] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_cExport.cmake\n'}
+[3.716521] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.719054] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.719803] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.720499] (-) TimerEvent: {}
+[3.722474] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_cppExport.cmake\n'}
+[3.724972] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.725857] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.728573] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.729334] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.732098] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_cExport.cmake\n'}
+[3.732938] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.735550] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.736306] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.738777] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_cppExport.cmake\n'}
+[3.739542] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.741740] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_pyExport.cmake\n'}
+[3.742506] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/export_ctrl_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.743306] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[3.744096] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.744958] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.745512] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.746306] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.747008] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.747505] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.748146] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interfaceConfig.cmake\n'}
+[3.748809] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/cmake/ctrl_interfaceConfig-version.cmake\n'}
+[3.749322] (ctrl_interface) StdoutLine: {'line': b'-- Up-to-date: /home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.xml\n'}
+[3.757443] (ctrl_interface) CommandEnded: {'returncode': 0}
+[3.820744] (-) TimerEvent: {}
+[3.921376] (-) TimerEvent: {}
+[4.022038] (-) TimerEvent: {}
+[4.122747] (-) TimerEvent: {}
+[4.223557] (-) TimerEvent: {}
+[4.324200] (-) TimerEvent: {}
+[4.359861] (ctrl_interface) JobEnded: {'identifier': 'ctrl_interface', 'rc': 0}
+[4.364276] (puckPack) JobStarted: {'identifier': 'puckPack'}
+[4.424568] (-) TimerEvent: {}
+[4.525479] (-) TimerEvent: {}
+[4.626081] (-) TimerEvent: {}
+[4.726954] (-) TimerEvent: {}
+[4.827526] (-) TimerEvent: {}
+[4.928128] (-) TimerEvent: {}
+[5.028769] (-) TimerEvent: {}
+[5.129313] (-) TimerEvent: {}
+[5.229910] (-) TimerEvent: {}
+[5.330510] (-) TimerEvent: {}
+[5.431172] (-) TimerEvent: {}
+[5.532137] (-) TimerEvent: {}
+[5.632806] (-) TimerEvent: {}
+[5.733383] (-) TimerEvent: {}
+[5.833999] (-) TimerEvent: {}
+[5.934556] (-) TimerEvent: {}
+[6.035197] (-) TimerEvent: {}
+[6.135909] (-) TimerEvent: {}
+[6.236497] (-) TimerEvent: {}
+[6.337039] (-) TimerEvent: {}
+[6.437572] (-) TimerEvent: {}
+[6.538151] (-) TimerEvent: {}
+[6.638795] (-) TimerEvent: {}
+[6.739530] (-) TimerEvent: {}
+[6.840250] (-) TimerEvent: {}
+[6.940993] (-) TimerEvent: {}
+[7.041721] (-) TimerEvent: {}
+[7.142508] (-) TimerEvent: {}
+[7.243188] (-) TimerEvent: {}
+[7.343905] (-) TimerEvent: {}
+[7.444495] (-) TimerEvent: {}
+[7.545081] (-) TimerEvent: {}
+[7.645682] (-) TimerEvent: {}
+[7.746272] (-) TimerEvent: {}
+[7.846950] (-) TimerEvent: {}
+[7.947505] (-) TimerEvent: {}
+[8.048061] (-) TimerEvent: {}
+[8.148647] (-) TimerEvent: {}
+[8.249191] (-) TimerEvent: {}
+[8.349784] (-) TimerEvent: {}
+[8.450330] (-) TimerEvent: {}
+[8.550926] (-) TimerEvent: {}
+[8.651575] (-) TimerEvent: {}
+[8.752272] (-) TimerEvent: {}
+[8.852912] (-) TimerEvent: {}
+[8.953613] (-) TimerEvent: {}
+[9.054596] (-) TimerEvent: {}
+[9.098825] (puckPack) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/puckPack', 'build', '--build-base', '/home/asme/ros_ws/build/puckPack/build', 'install', '--record', '/home/asme/ros_ws/build/puckPack/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/asme/ros_ws/src/puckPack', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'asme', 'SSH_CLIENT': '10.0.0.1 45604 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/asme/ros_ws/install/ctrl_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/asme', 'OLDPWD': '/home/asme/ros_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'asme', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/asme/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/asme/ros_ws/install/ctrl_interface:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/asme/ros_ws/build/puckPack', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.1 45604 10.0.0.148 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/asme/ros_ws/install/ctrl_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[9.154767] (-) TimerEvent: {}
+[9.255401] (-) TimerEvent: {}
+[9.356251] (-) TimerEvent: {}
+[9.456907] (-) TimerEvent: {}
+[9.557552] (-) TimerEvent: {}
+[9.658173] (-) TimerEvent: {}
+[9.758758] (-) TimerEvent: {}
+[9.859305] (-) TimerEvent: {}
+[9.959881] (-) TimerEvent: {}
+[10.060440] (-) TimerEvent: {}
+[10.160981] (-) TimerEvent: {}
+[10.261558] (-) TimerEvent: {}
+[10.362102] (-) TimerEvent: {}
+[10.432041] (puckPack) StdoutLine: {'line': b'running egg_info\n'}
+[10.462248] (-) TimerEvent: {}
+[10.531631] (puckPack) StdoutLine: {'line': b'writing ../../build/puckPack/puckPack.egg-info/PKG-INFO\n'}
+[10.533849] (puckPack) StdoutLine: {'line': b'writing dependency_links to ../../build/puckPack/puckPack.egg-info/dependency_links.txt\n'}
+[10.536467] (puckPack) StdoutLine: {'line': b'writing entry points to ../../build/puckPack/puckPack.egg-info/entry_points.txt\n'}
+[10.537352] (puckPack) StdoutLine: {'line': b'writing requirements to ../../build/puckPack/puckPack.egg-info/requires.txt\n'}
+[10.538670] (puckPack) StdoutLine: {'line': b'writing top-level names to ../../build/puckPack/puckPack.egg-info/top_level.txt\n'}
+[10.562392] (-) TimerEvent: {}
+[10.663081] (-) TimerEvent: {}
+[10.761817] (puckPack) StdoutLine: {'line': b"reading manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'\n"}
+[10.763184] (-) TimerEvent: {}
+[10.764518] (puckPack) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[10.767062] (puckPack) StdoutLine: {'line': b"writing manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'\n"}
+[10.767927] (puckPack) StdoutLine: {'line': b'running build\n'}
+[10.768390] (puckPack) StdoutLine: {'line': b'running build_py\n'}
+[10.771465] (puckPack) StdoutLine: {'line': b'copying puckPack/mainCamera.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack\n'}
+[10.773666] (puckPack) StdoutLine: {'line': b'copying puckPack/Thinker.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack\n'}
+[10.776700] (puckPack) StdoutLine: {'line': b'running install\n'}
+[10.805080] (puckPack) StdoutLine: {'line': b'running install_lib\n'}
+[10.863330] (-) TimerEvent: {}
+[10.907764] (puckPack) StdoutLine: {'line': b'copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/mainCamera.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack\n'}
+[10.909124] (puckPack) StdoutLine: {'line': b'copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/Thinker.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack\n'}
+[10.916206] (puckPack) StdoutLine: {'line': b'byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/mainCamera.py to mainCamera.cpython-312.pyc\n'}
+[10.923703] (puckPack) StdoutLine: {'line': b'byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/Thinker.py to Thinker.cpython-312.pyc\n'}
+[10.928635] (puckPack) StdoutLine: {'line': b'running install_data\n'}
+[10.931535] (puckPack) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.963504] (-) TimerEvent: {}
+[11.039751] (puckPack) StdoutLine: {'line': b"removing '/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[11.041691] (puckPack) StdoutLine: {'line': b'Copying ../../build/puckPack/puckPack.egg-info to /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info\n'}
+[11.048038] (puckPack) StdoutLine: {'line': b'running install_scripts\n'}
+[11.063665] (-) TimerEvent: {}
+[11.164235] (-) TimerEvent: {}
+[11.264837] (-) TimerEvent: {}
+[11.365376] (-) TimerEvent: {}
+[11.465987] (-) TimerEvent: {}
+[11.566534] (-) TimerEvent: {}
+[11.667074] (-) TimerEvent: {}
+[11.767671] (-) TimerEvent: {}
+[11.775475] (puckPack) StdoutLine: {'line': b'Installing Thinker script to /home/asme/ros_ws/install/puckPack/lib/puckPack\n'}
+[11.776918] (puckPack) StdoutLine: {'line': b'Installing UartCommander script to /home/asme/ros_ws/install/puckPack/lib/puckPack\n'}
+[11.777837] (puckPack) StdoutLine: {'line': b'Installing controlPC script to /home/asme/ros_ws/install/puckPack/lib/puckPack\n'}
+[11.779089] (puckPack) StdoutLine: {'line': b'Installing mainCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack\n'}
+[11.780192] (puckPack) StdoutLine: {'line': b'Installing rpiCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack\n'}
+[11.782772] (puckPack) StdoutLine: {'line': b"writing list of installed files to '/home/asme/ros_ws/build/puckPack/install.log'\n"}
+[11.867939] (-) TimerEvent: {}
+[11.931646] (puckPack) CommandEnded: {'returncode': 0}
+[11.963525] (puckPack) JobEnded: {'identifier': 'puckPack', 'rc': 0}
+[11.966520] (-) EventReactorShutdown: {}

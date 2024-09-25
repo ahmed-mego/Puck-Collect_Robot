@@ -1,0 +1,15 @@
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake
+/home/asme/ros_ws/src/install/tutorial_interfaces/share/tutorial_interfaces/package.xml
