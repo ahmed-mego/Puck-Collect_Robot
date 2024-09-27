@@ -14,31 +14,20 @@
 
 import rclpy
 from rclpy.node import Node
-
 from std_msgs.msg import String
 from ctrl_interface.msg import CtrlInterface
-
-
 import serial
 import time
 
-
-
-
-
 def array_checksum(arr):
-    
     checksum_code = 0
     
     for item in arr:
         item = int(item, 16)
         checksum_code += item
-    
     checksum_code = ~checksum_code
-    checksum_code = checksum_code % 255
-    
-    return str(hex((checksum_code & 0xFF)+1)[2:])  # Ensure it returns a uint8_t equivalent (0-255)
-
+    checksum_code = checksum_code % 255    
+    return "0x{:02x}".format((checksum_code & 0xFF)+1)[2:]#str(hex((checksum_code & 0xFF)+1)[2:])  # Ensure it returns a uint8_t equivalent (0-255)
 
 def Cerate_StepperCommand(stepper_ID,steps,direction):
     Command = "AA "+f"{stepper_ID:02x}"+" 00 "+f"{(direction & 0xFF):02x}"+" "
@@ -56,11 +45,6 @@ def Cerate_DcCommand(Dc_ID,PWM,direction):
     #print(Command)
     return Command
     
-
-
-
-
-
 class CommandSubscriber(Node):
 
     def __init__(self,port,baudrate):
@@ -81,16 +65,28 @@ class CommandSubscriber(Node):
         # Open a serial connection
         for hex_command in hex_commands:
             # Convert hex command to bytes
+            
             command_bytes = bytes.fromhex(hex_command)
             
             # Send the command
             self.ser.write(command_bytes)
             
+#            response = self.ser.read(1)
     def opengate(self):
         return Cerate_StepperCommand(1,500,0)
         
     def closegate(self):
         return Cerate_StepperCommand(1,500,1)
+    
+    def sorterOneStepLeft(self):
+        return Cerate_StepperCommand(0,10,1)
+        
+    def sorterOneStepRight(self):
+        return Cerate_StepperCommand(0,10,0)
+
+    def step_90(self):
+        return Cerate_StepperCommand(0,500,0)
+    
     def sortermiddle(self):
         s_step = 0
         s_dir =1
@@ -101,6 +97,7 @@ class CommandSubscriber(Node):
             s_step = 500
             s_dir = 1
         return Cerate_StepperCommand(0,s_step,s_dir)
+   
     def sorterleft(self):
         s_step = 0
         s_dir =1
@@ -111,6 +108,7 @@ class CommandSubscriber(Node):
             s_step = 1000
             s_dir = 1
         return Cerate_StepperCommand(0,s_step,s_dir)
+   
     def sorterright(self):
         s_step = 0
         s_dir =1
@@ -121,6 +119,7 @@ class CommandSubscriber(Node):
             s_step = 1000
             s_dir = 0
         return Cerate_StepperCommand(0,s_step,s_dir)
+    
     def listener_callback(self, msg):
         # 0 close 1 open 
         # 0 middle 1 left 2 right 
@@ -133,13 +132,23 @@ class CommandSubscriber(Node):
             elif msg.g_stepper == 0:
                 hex_commands.append(self.closegate())
             self.last_g_stepper = msg.g_stepper
-        if(msg.s_stepper != self.last_s_stepper):
+        if(msg.s_stepper != self.last_s_stepper or msg.s_stepper == 3 or msg.s_stepper == 4 or msg.s_stepper == 5):
             if msg.s_stepper == 0:
                 hex_commands.append(self.sortermiddle())
             elif msg.s_stepper == 1:
                 hex_commands.append(self.sorterleft())
             elif msg.s_stepper == 2:
                 hex_commands.append(self.sorterright())            
+            elif msg.s_stepper == 3:
+                hex_commands.append(self.sorterOneStepLeft())     
+                msg.s_stepper = 100
+            elif msg.s_stepper == 4:
+                hex_commands.append(self.sorterOneStepRight())  
+                msg.s_stepper = 100
+            elif msg.s_stepper == 5:
+                hex_commands.append(self.step_90())
+                hex_commands.append(self.step_90())
+                msg.s_stepper = 0
             self.last_s_stepper = msg.s_stepper
         if msg.r_motor != self.last_r_motor:
             if msg.r_motor < 0:
@@ -153,10 +162,11 @@ class CommandSubscriber(Node):
             else:
                 hex_commands.append(Cerate_DcCommand(2,abs(msg.l_motor),0))
             self.last_l_motor = msg.l_motor
-        #
         t2 = self.get_clock().now()
+        #self.get_logger().info('Publishing: "%s"' % hex_commands)
         self.send_multiple_hex_commands_serial(hex_commands)
-        self.get_logger().info(f"time is {t2-t1}")
+        #self.get_logger().info(f"time is {t2-t1}")
+        
 
 def main(args=None):
     rclpy.init(args=args)
@@ -173,3 +183,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+

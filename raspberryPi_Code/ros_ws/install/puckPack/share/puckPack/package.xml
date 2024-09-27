@@ -16,5 +16,10 @@
 <exec_depend>ctrl_interface</exec_depend>
   <export>
     <build_type>ament_python</build_type>
-  </export>
+    <launch>
+        <launchfile>robot_launch/a_launch.py</launchfile>
+    </launch>
+</export>
+
+
 </package>

@@ -15,6 +15,12 @@ def generate_launch_description():
             package='puckPack',
             executable='rpiCamera',
         ),
+
+        Node(
+            package='puckPack',
+            executable='mainCamera',
+        ),
+
         Node(
             package='puckPack',
             executable='choose_color',

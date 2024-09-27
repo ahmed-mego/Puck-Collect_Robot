@@ -1,0 +1,33 @@
+[12.250s] Invoking command in '/home/asme/ros_ws/src/puckPack': AMENT_PREFIX_PATH=/home/asme/ros_ws/install/ctrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asme/ros_ws/install/ctrl_interface:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/asme/ros_ws/install/ctrl_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data
+[16.108s] running egg_info
+[16.429s] writing ../../build/puckPack/puckPack.egg-info/PKG-INFO
+[16.433s] writing dependency_links to ../../build/puckPack/puckPack.egg-info/dependency_links.txt
+[16.438s] writing entry points to ../../build/puckPack/puckPack.egg-info/entry_points.txt
+[16.440s] writing requirements to ../../build/puckPack/puckPack.egg-info/requires.txt
+[16.443s] writing top-level names to ../../build/puckPack/puckPack.egg-info/top_level.txt
+[17.104s] reading manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+[17.110s] adding license file 'LICENSE'
+[17.117s] writing manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+[17.119s] running build
+[17.120s] running build_py
+[17.125s] copying puckPack/thinker.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+[17.133s] copying puckPack/UartCommander.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+[17.136s] running install
+[17.208s] running install_lib
+[17.533s] copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/thinker.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+[17.541s] copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/UartCommander.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+[17.550s] byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/thinker.py to thinker.cpython-312.pyc
+[17.575s] byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/UartCommander.py to UartCommander.cpython-312.pyc
+[17.593s] running install_data
+[17.597s] running install_egg_info
+[17.937s] removing '/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info' (and everything under it)
+[17.942s] Copying ../../build/puckPack/puckPack.egg-info to /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info
+[17.958s] running install_scripts
+[20.218s] Installing UartCommander script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[20.222s] Installing choose_color script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[20.229s] Installing controlPC script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[20.231s] Installing mainCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[20.235s] Installing rpiCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[20.240s] Installing thinker script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[20.245s] writing list of installed files to '/home/asme/ros_ws/build/puckPack/install.log'
+[20.516s] Invoked command in '/home/asme/ros_ws/src/puckPack' returned '0': AMENT_PREFIX_PATH=/home/asme/ros_ws/install/ctrl_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asme/ros_ws/install/ctrl_interface:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/asme/ros_ws/install/ctrl_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data

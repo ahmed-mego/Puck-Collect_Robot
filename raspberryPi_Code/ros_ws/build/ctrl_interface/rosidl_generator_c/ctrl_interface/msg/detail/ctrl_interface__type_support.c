@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "ctrl_interface/msg/detail/ctrl_interface__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "ctrl_interface/msg/detail/ctrl_interface__functions.h"
 #include "ctrl_interface/msg/detail/ctrl_interface__type_support.h"
+#include "ctrl_interface/msg/detail/ctrl_interface__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

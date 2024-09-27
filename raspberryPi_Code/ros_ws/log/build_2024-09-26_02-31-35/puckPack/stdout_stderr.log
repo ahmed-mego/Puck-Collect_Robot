@@ -1,0 +1,59 @@
+running egg_info
+creating ../../build/puckPack/puckPack.egg-info
+writing ../../build/puckPack/puckPack.egg-info/PKG-INFO
+writing dependency_links to ../../build/puckPack/puckPack.egg-info/dependency_links.txt
+writing entry points to ../../build/puckPack/puckPack.egg-info/entry_points.txt
+writing requirements to ../../build/puckPack/puckPack.egg-info/requires.txt
+writing top-level names to ../../build/puckPack/puckPack.egg-info/top_level.txt
+writing manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+reading manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/asme/ros_ws/build/puckPack/build
+creating /home/asme/ros_ws/build/puckPack/build/lib
+creating /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+copying puckPack/__init__.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+copying puckPack/thinker.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+copying puckPack/mainCamera.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+copying puckPack/choose_color.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+copying puckPack/rpiCamera.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+copying puckPack/controlPC.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+copying puckPack/calibration.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+copying puckPack/UartCommander.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+running install
+running install_lib
+creating /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/__init__.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/thinker.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/mainCamera.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/choose_color.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/rpiCamera.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/controlPC.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/calibration.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/UartCommander.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/thinker.py to thinker.cpython-312.pyc
+byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/mainCamera.py to mainCamera.cpython-312.pyc
+byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/choose_color.py to choose_color.cpython-312.pyc
+byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/rpiCamera.py to rpiCamera.cpython-312.pyc
+byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/controlPC.py to controlPC.cpython-312.pyc
+byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/calibration.py to calibration.cpython-312.pyc
+byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/UartCommander.py to UartCommander.cpython-312.pyc
+running install_data
+creating /home/asme/ros_ws/install/puckPack/share/ament_index
+creating /home/asme/ros_ws/install/puckPack/share/ament_index/resource_index
+creating /home/asme/ros_ws/install/puckPack/share/ament_index/resource_index/packages
+copying resource/puckPack -> /home/asme/ros_ws/install/puckPack/share/ament_index/resource_index/packages
+copying package.xml -> /home/asme/ros_ws/install/puckPack/share/puckPack
+running install_egg_info
+Copying ../../build/puckPack/puckPack.egg-info to /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info
+running install_scripts
+Installing UartCommander script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+Installing choose_color script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+Installing controlPC script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+Installing mainCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+Installing rpiCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+Installing thinker script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+writing list of installed files to '/home/asme/ros_ws/build/puckPack/install.log'

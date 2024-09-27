@@ -1,0 +1,30 @@
+[9.522s] Invoking command in '/home/asme/ros_ws/src/puckPack': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data
+[12.780s] running egg_info
+[13.042s] writing ../../build/puckPack/puckPack.egg-info/PKG-INFO
+[13.045s] writing dependency_links to ../../build/puckPack/puckPack.egg-info/dependency_links.txt
+[13.048s] writing entry points to ../../build/puckPack/puckPack.egg-info/entry_points.txt
+[13.049s] writing requirements to ../../build/puckPack/puckPack.egg-info/requires.txt
+[13.054s] writing top-level names to ../../build/puckPack/puckPack.egg-info/top_level.txt
+[13.574s] reading manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+[13.578s] adding license file 'LICENSE'
+[13.584s] writing manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+[13.586s] running build
+[13.587s] running build_py
+[13.589s] copying puckPack/thinker.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+[13.596s] running install
+[13.665s] running install_lib
+[13.925s] copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/thinker.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+[13.935s] byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/thinker.py to thinker.cpython-312.pyc
+[13.955s] running install_data
+[13.957s] running install_egg_info
+[14.224s] removing '/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info' (and everything under it)
+[14.228s] Copying ../../build/puckPack/puckPack.egg-info to /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info
+[14.242s] running install_scripts
+[16.044s] Installing UartCommander script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.045s] Installing choose_color script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.047s] Installing controlPC script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.049s] Installing mainCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.050s] Installing rpiCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.052s] Installing thinker script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.056s] writing list of installed files to '/home/asme/ros_ws/build/puckPack/install.log'
+[16.295s] Invoked command in '/home/asme/ros_ws/src/puckPack' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data

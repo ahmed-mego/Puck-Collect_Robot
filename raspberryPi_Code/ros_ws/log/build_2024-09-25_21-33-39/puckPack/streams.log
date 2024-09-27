@@ -1,0 +1,33 @@
+[9.812s] Invoking command in '/home/asme/ros_ws/src/puckPack': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data
+[13.081s] running egg_info
+[13.334s] writing ../../build/puckPack/puckPack.egg-info/PKG-INFO
+[13.337s] writing dependency_links to ../../build/puckPack/puckPack.egg-info/dependency_links.txt
+[13.339s] writing entry points to ../../build/puckPack/puckPack.egg-info/entry_points.txt
+[13.340s] writing requirements to ../../build/puckPack/puckPack.egg-info/requires.txt
+[13.342s] writing top-level names to ../../build/puckPack/puckPack.egg-info/top_level.txt
+[13.870s] reading manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+[13.874s] adding license file 'LICENSE'
+[13.881s] writing manifest file '../../build/puckPack/puckPack.egg-info/SOURCES.txt'
+[13.882s] running build
+[13.883s] running build_py
+[13.885s] copying puckPack/thinker.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+[13.888s] copying puckPack/choose_color.py -> /home/asme/ros_ws/build/puckPack/build/lib/puckPack
+[13.894s] running install
+[13.961s] running install_lib
+[14.221s] copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/thinker.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+[14.224s] copying /home/asme/ros_ws/build/puckPack/build/lib/puckPack/choose_color.py -> /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack
+[14.233s] byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/thinker.py to thinker.cpython-312.pyc
+[14.252s] byte-compiling /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/choose_color.py to choose_color.cpython-312.pyc
+[14.262s] running install_data
+[14.263s] running install_egg_info
+[14.531s] removing '/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info' (and everything under it)
+[14.535s] Copying ../../build/puckPack/puckPack.egg-info to /home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack-0.0.0-py3.12.egg-info
+[14.548s] running install_scripts
+[16.361s] Installing UartCommander script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.363s] Installing choose_color script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.365s] Installing controlPC script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.367s] Installing mainCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.369s] Installing rpiCamera script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.370s] Installing thinker script to /home/asme/ros_ws/install/puckPack/lib/puckPack
+[16.374s] writing list of installed files to '/home/asme/ros_ws/build/puckPack/install.log'
+[16.613s] Invoked command in '/home/asme/ros_ws/src/puckPack' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data

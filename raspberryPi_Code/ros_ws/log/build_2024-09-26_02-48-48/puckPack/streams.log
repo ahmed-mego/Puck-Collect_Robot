@@ -1,0 +1,51 @@
+[10.554s] Invoking command in '/home/asme/ros_ws/src/puckPack': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data
+[11.159s] Traceback (most recent call last):
+[11.160s]   File "/home/asme/ros_ws/src/puckPack/setup.py", line 1, in <module>
+[11.161s]     from setuptools import find_packages, setup
+[11.162s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 7, in <module>
+[11.164s]     import _distutils_hack.override  # noqa: F401
+[11.165s]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[11.166s]   File "/usr/lib/python3/dist-packages/_distutils_hack/override.py", line 1, in <module>
+[11.167s]     __import__('_distutils_hack').do_override()
+[11.168s]   File "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py", line 77, in do_override
+[11.170s]     ensure_local_distutils()
+[11.171s]   File "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py", line 60, in ensure_local_distutils
+[11.172s]     importlib.import_module('distutils')
+[11.174s]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+[11.176s]     return _bootstrap._gcd_import(name[level:], package, level)
+[11.177s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[11.178s]   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+[11.179s]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+[11.181s]   File "<frozen importlib._bootstrap>", line 1322, in _find_and_load_unlocked
+[11.182s]   File "<frozen importlib._bootstrap>", line 1262, in _find_spec
+[11.183s]   File "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py", line 97, in find_spec
+[11.184s]     return method()
+[11.187s]            ^^^^^^^^
+[11.188s]   File "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py", line 108, in spec_for_distutils
+[11.190s]     mod = importlib.import_module('setuptools._distutils')
+[11.191s]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[11.193s]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+[11.194s]     return _bootstrap._gcd_import(name[level:], package, level)
+[11.196s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[11.198s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/__init__.py", line 12, in <module>
+[11.200s]     importlib.import_module('_distutils_system_mod')
+[11.201s]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+[11.203s]     return _bootstrap._gcd_import(name[level:], package, level)
+[11.204s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[11.206s]   File "/usr/lib/python3.12/_distutils_system_mod.py", line 15, in <module>
+[11.207s]     import distutils.command.install as orig_install
+[11.209s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/command/install.py", line 12, in <module>
+[11.210s]     from ..core import Command
+[11.213s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 23, in <module>
+[11.215s]     from .cmd import Command
+[11.217s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 13, in <module>
+[11.219s]     from . import util, dir_util, file_util, archive_util, dep_util
+[11.220s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/archive_util.py", line 11, in <module>
+[11.222s]     import zipfile
+[11.223s]   File "/usr/lib/python3.12/zipfile/__init__.py", line 6, in <module>
+[11.225s]     import binascii
+[11.226s]   File "<frozen importlib._bootstrap>", line 1357, in _find_and_load
+[11.227s]   File "<frozen importlib._bootstrap>", line 421, in __exit__
+[11.228s]   File "<frozen importlib._bootstrap>", line 378, in release
+[11.230s] KeyboardInterrupt
+[11.278s] Invoked command in '/home/asme/ros_ws/src/puckPack' returned '-2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data

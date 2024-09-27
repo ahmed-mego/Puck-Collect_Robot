@@ -6,8 +6,8 @@ from std_msgs.msg import String
 from time import sleep
 import lgpio 
 BUTTON_GPIO = 10
-BLUE_GPIO = 18
-RED_GPIO = 23
+BLUE_GPIO = 23
+RED_GPIO = 18
 h = lgpio.gpiochip_open(0)
 lgpio.exceptions = False
 if h < 0:
@@ -35,8 +35,22 @@ def main(args=None):
     switchPublisher = SwitchPublisher()
     msg = Int8()
     msg.data = 0    
+
+    lgpio.gpio_write(h, BLUE_GPIO, 1)
     while rclpy.ok():
-        
+        new_val = lgpio.gpio_read(h, BUTTON_GPIO)
+        if new_val == 0 and old_val == 1:
+            msg.data = 3
+            for i in range(3):
+                lgpio.gpio_write(h, RED_GPIO, 1)
+                sleep(.7)
+                lgpio.gpio_write(h, RED_GPIO, 0)
+                sleep(.7)
+            switchPublisher.publish(msg)
+            break
+        old_val = new_val
+    old_val = new_val
+    while rclpy.ok():
         new_val = lgpio.gpio_read(h, BUTTON_GPIO) 
         if new_val == 0 and old_val == 1:
             if msg.data == 0: 
@@ -49,13 +63,13 @@ def main(args=None):
         print(msg.data,new_val)
         old_val = new_val
         
-        if msg.data == 0 :
-            lgpio.gpio_write(h, BLUE_GPIO, 0)
-            lgpio.gpio_write(h, RED_GPIO, 1)
+        if msg.data == 0 : 
+            lgpio.gpio_write(h, BLUE_GPIO, 1)            # 0 High
+            lgpio.gpio_write(h, RED_GPIO, 0)              # 1 Low
 
-        else :
-            lgpio.gpio_write(h, RED_GPIO, 0)
-            lgpio.gpio_write(h, BLUE_GPIO, 1)
+        elif msg.data == 1:
+            lgpio.gpio_write(h, RED_GPIO, 1)
+            lgpio.gpio_write(h, BLUE_GPIO, 0)
 
         switchPublisher.publish(msg)
 
