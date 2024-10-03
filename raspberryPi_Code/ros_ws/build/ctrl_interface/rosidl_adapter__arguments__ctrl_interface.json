@@ -1,6 +1,0 @@
-{
-  "package_name": "ctrl_interface",
-  "non_idl_tuples": [
-    "/home/asme/ros_ws/src/ctrl_interface:msg/CtrlInterface.msg"
-  ]
-}

@@ -1,6 +1,0 @@
-Sorry: IndentationError: expected an indented block after 'if' statement on line 103 (thinker.py, line 105)
-  File "/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages/puckPack/rpiCamera.py", line 75
-    if  detectoutput == 0 # red:
-                          ^^^^^^^
-SyntaxError: expected ':'
-

@@ -1,7 +1,0 @@
-[console_scripts]
-UartCommander = puckPack.UartCommander:main
-choose_color = puckPack.choose_color:main
-controlPC = puckPack.controlPC:main
-mainCamera = puckPack.mainCamera:main
-rpiCamera = puckPack.rpiCamera:main
-thinker = puckPack.thinker:main
