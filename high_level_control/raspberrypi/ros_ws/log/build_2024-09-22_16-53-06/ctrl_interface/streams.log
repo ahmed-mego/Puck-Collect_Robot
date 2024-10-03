@@ -1,0 +1,25 @@
+[0.074s] Invoking command in '/home/asme/ros_ws/build/ctrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/asme/ros_ws/build/ctrl_interface -- -j4 -l4
+[1.041s] [  2%] Built target ctrl_interface__rosidl_generator_type_description
+[1.198s] [  2%] Built target ament_cmake_python_copy_ctrl_interface
+[1.353s] [  5%] Built target ctrl_interface__cpp
+[1.440s] [ 20%] Built target ctrl_interface__rosidl_generator_c
+[1.869s] [ 29%] Built target ctrl_interface__rosidl_typesupport_fastrtps_c
+[1.879s] [ 38%] Built target ctrl_interface__rosidl_typesupport_fastrtps_cpp
+[1.894s] [ 47%] Built target ctrl_interface__rosidl_typesupport_cpp
+[2.261s] [ 55%] Built target ctrl_interface__rosidl_typesupport_c
+[2.264s] [ 64%] Built target ctrl_interface__rosidl_typesupport_introspection_c
+[2.348s] [ 73%] Built target ctrl_interface__rosidl_typesupport_introspection_cpp
+[2.644s] [ 73%] Built target ctrl_interface
+[2.966s] [ 76%] Built target ctrl_interface__py
+[3.343s] [ 82%] Built target ctrl_interface__rosidl_generator_py
+[3.725s] [ 88%] Built target ctrl_interface_s__rosidl_typesupport_fastrtps_c
+[3.739s] [ 94%] Built target ctrl_interface_s__rosidl_typesupport_c
+[3.764s] [100%] Built target ctrl_interface_s__rosidl_typesupport_introspection_c
+[4.285s] running egg_info
+[4.593s] writing ctrl_interface.egg-info/PKG-INFO
+[4.595s] writing dependency_links to ctrl_interface.egg-info/dependency_links.txt
+[4.598s] writing top-level names to ctrl_interface.egg-info/top_level.txt
+[5.392s] reading manifest file 'ctrl_interface.egg-info/SOURCES.txt'
+[5.401s] writing manifest file 'ctrl_interface.egg-info/SOURCES.txt'
+[5.690s] [100%] Built target ament_cmake_python_build_ctrl_interface_egg
+[5.835s] Invoked command in '/home/asme/ros_ws/build/ctrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/asme/ros_ws/build/ctrl_interface -- -j4 -l4

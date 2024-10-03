@@ -1,0 +1,219 @@
+[1.238s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.238s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffbd5337a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbd6a2660>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbd6a2660>>, mixin_verb=('build',))
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.630s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.630s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.632s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.632s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/asme/ros_ws'
+[1.633s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.634s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.635s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.636s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.935s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.935s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.936s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.936s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.937s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.937s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.947s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src': Error(s) in package 'src/package.xml':
+The manifest contains invalid XML:
+junk after document element: line 2, column 0
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.949s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.949s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extensions ['ignore', 'ignore_ament_install']
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extension 'ignore'
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extension 'ignore_ament_install'
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extensions ['colcon_pkg']
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extension 'colcon_pkg'
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extensions ['colcon_meta']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extension 'colcon_meta'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extensions ['ros']
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src/ctrl_interface) by extension 'ros'
+[1.971s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ctrl_interface' with type 'ros.ament_cmake' and name 'ctrl_interface'
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[1.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extensions ['ignore', 'ignore_ament_install']
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extension 'ignore'
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extension 'ignore_ament_install'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extensions ['colcon_pkg']
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extension 'colcon_pkg'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extensions ['colcon_meta']
+[1.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extension 'colcon_meta'
+[1.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extensions ['ros']
+[1.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/puckPack) by extension 'ros'
+[1.986s] DEBUG:colcon.colcon_core.package_identification:Package 'src/puckPack' with type 'ros.ament_python' and name 'puckPack'
+[1.987s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.987s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.988s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.988s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.988s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.189s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/asme/ros_ws/install
+[2.219s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[2.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.784s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'cmake_args' from command line to 'None'
+[2.785s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'cmake_target' from command line to 'None'
+[2.785s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.785s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[2.786s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'cmake_clean_first' from command line to 'False'
+[2.786s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'cmake_force_configure' from command line to 'False'
+[2.786s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'ament_cmake_args' from command line to 'None'
+[2.786s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[2.787s] Level 5:colcon.colcon_core.verb:set package 'ctrl_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.787s] DEBUG:colcon.colcon_core.verb:Building package 'ctrl_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asme/ros_ws/build/ctrl_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asme/ros_ws/install/ctrl_interface', 'merge_install': False, 'path': '/home/asme/ros_ws/src/ctrl_interface', 'symlink_install': False, 'test_result_base': None}
+[2.790s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'cmake_args' from command line to 'None'
+[2.791s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'cmake_target' from command line to 'None'
+[2.791s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.791s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'cmake_clean_cache' from command line to 'False'
+[2.792s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'cmake_clean_first' from command line to 'False'
+[2.792s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'cmake_force_configure' from command line to 'False'
+[2.792s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'ament_cmake_args' from command line to 'None'
+[2.792s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'catkin_cmake_args' from command line to 'None'
+[2.793s] Level 5:colcon.colcon_core.verb:set package 'puckPack' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.793s] DEBUG:colcon.colcon_core.verb:Building package 'puckPack' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asme/ros_ws/build/puckPack', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asme/ros_ws/install/puckPack', 'merge_install': False, 'path': '/home/asme/ros_ws/src/puckPack', 'symlink_install': False, 'test_result_base': None}
+[2.794s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.800s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.801s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asme/ros_ws/src/ctrl_interface' with build type 'ament_cmake'
+[2.802s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asme/ros_ws/src/ctrl_interface'
+[2.824s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.826s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.826s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asme/ros_ws/build/ctrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/asme/ros_ws/build/ctrl_interface -- -j4 -l4
+[8.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asme/ros_ws/build/ctrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/asme/ros_ws/build/ctrl_interface -- -j4 -l4
+[9.653s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asme/ros_ws/build/ctrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/asme/ros_ws/build/ctrl_interface
+[10.447s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ctrl_interface)
+[10.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asme/ros_ws/build/ctrl_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/asme/ros_ws/build/ctrl_interface
+[10.475s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface' for CMake module files
+[10.489s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface' for CMake config files
+[10.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('ctrl_interface', 'cmake_prefix_path')
+[10.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/cmake_prefix_path.ps1'
+[10.504s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/cmake_prefix_path.dsv'
+[10.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/cmake_prefix_path.sh'
+[10.516s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/lib'
+[10.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('ctrl_interface', 'ld_library_path_lib')
+[10.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/ld_library_path_lib.ps1'
+[10.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/ld_library_path_lib.dsv'
+[10.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/ld_library_path_lib.sh'
+[10.530s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/bin'
+[10.531s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/lib/pkgconfig/ctrl_interface.pc'
+[10.533s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages'
+[10.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('ctrl_interface', 'pythonpath')
+[10.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/pythonpath.ps1'
+[10.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/pythonpath.dsv'
+[10.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/pythonpath.sh'
+[10.551s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/bin'
+[10.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.ps1'
+[10.561s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.dsv'
+[10.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.sh'
+[10.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.bash'
+[10.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.zsh'
+[10.589s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asme/ros_ws/install/ctrl_interface/share/colcon-core/packages/ctrl_interface)
+[11.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ctrl_interface)
+[11.579s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface' for CMake module files
+[11.585s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface' for CMake config files
+[11.593s] Level 1:colcon.colcon_core.shell:create_environment_hook('ctrl_interface', 'cmake_prefix_path')
+[11.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/cmake_prefix_path.ps1'
+[11.600s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/cmake_prefix_path.dsv'
+[11.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/cmake_prefix_path.sh'
+[11.609s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/lib'
+[11.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('ctrl_interface', 'ld_library_path_lib')
+[11.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/ld_library_path_lib.ps1'
+[11.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/ld_library_path_lib.dsv'
+[11.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/ld_library_path_lib.sh'
+[11.624s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/bin'
+[11.624s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/lib/pkgconfig/ctrl_interface.pc'
+[11.627s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages'
+[11.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('ctrl_interface', 'pythonpath')
+[11.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/pythonpath.ps1'
+[11.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/pythonpath.dsv'
+[11.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/hook/pythonpath.sh'
+[11.644s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/ctrl_interface/bin'
+[11.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.ps1'
+[11.653s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.dsv'
+[11.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.sh'
+[11.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.bash'
+[11.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/ctrl_interface/share/ctrl_interface/package.zsh'
+[11.672s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asme/ros_ws/install/ctrl_interface/share/colcon-core/packages/ctrl_interface)
+[11.674s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/asme/ros_ws/src/puckPack' with build type 'ament_python'
+[11.677s] Level 1:colcon.colcon_core.shell:create_environment_hook('puckPack', 'ament_prefix_path')
+[11.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/puckPack/share/puckPack/hook/ament_prefix_path.ps1'
+[11.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asme/ros_ws/install/puckPack/share/puckPack/hook/ament_prefix_path.dsv'
+[11.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/puckPack/share/puckPack/hook/ament_prefix_path.sh'
+[11.698s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.699s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.277s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/asme/ros_ws/src/puckPack'
+[14.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[21.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asme/ros_ws/src/puckPack': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data
+[28.714s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/puckPack' for CMake module files
+[28.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asme/ros_ws/src/puckPack' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/asme/ros_ws/build/puckPack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/home/asme/ros_ws/install/ctrl_interface/lib/python3.12/site-packages:/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/puckPack build --build-base /home/asme/ros_ws/build/puckPack/build install --record /home/asme/ros_ws/build/puckPack/install.log --single-version-externally-managed install_data
+[28.724s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/puckPack' for CMake config files
+[28.734s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/puckPack/lib'
+[28.735s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/puckPack/bin'
+[28.735s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/puckPack/lib/pkgconfig/puckPack.pc'
+[28.737s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/puckPack/lib/python3.12/site-packages'
+[28.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('puckPack', 'pythonpath')
+[28.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/puckPack/share/puckPack/hook/pythonpath.ps1'
+[28.744s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asme/ros_ws/install/puckPack/share/puckPack/hook/pythonpath.dsv'
+[28.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asme/ros_ws/install/puckPack/share/puckPack/hook/pythonpath.sh'
+[28.752s] Level 1:colcon.colcon_core.environment:checking '/home/asme/ros_ws/install/puckPack/bin'
+[28.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puckPack)
+[28.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/puckPack/share/puckPack/package.ps1'
+[28.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asme/ros_ws/install/puckPack/share/puckPack/package.dsv'
+[28.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/puckPack/share/puckPack/package.sh'
+[28.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/puckPack/share/puckPack/package.bash'
+[28.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/asme/ros_ws/install/puckPack/share/puckPack/package.zsh'
+[28.774s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asme/ros_ws/install/puckPack/share/colcon-core/packages/puckPack)
+[28.776s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.780s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.781s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.781s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.835s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.836s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.836s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.950s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[28.951s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asme/ros_ws/install/local_setup.ps1'
+[28.958s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asme/ros_ws/install/_local_setup_util_ps1.py'
+[28.969s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asme/ros_ws/install/setup.ps1'
+[28.979s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asme/ros_ws/install/local_setup.sh'
+[28.983s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asme/ros_ws/install/_local_setup_util_sh.py'
+[28.988s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asme/ros_ws/install/setup.sh'
+[28.999s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asme/ros_ws/install/local_setup.bash'
+[29.003s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asme/ros_ws/install/setup.bash'
+[29.014s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asme/ros_ws/install/local_setup.zsh'
+[29.018s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asme/ros_ws/install/setup.zsh'

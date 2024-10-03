@@ -1,0 +1,44 @@
+[0.115s] Invoking command in '/home/asme/ros_ws/build/ctrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/asme/ros_ws/build/ctrl_interface -- -j4 -l4
+[0.754s] [  2%] Built target ctrl_interface__rosidl_generator_type_description
+[0.884s] [  2%] Built target ament_cmake_python_copy_ctrl_interface
+[1.030s] [  5%] Built target ctrl_interface__cpp
+[1.042s] [ 20%] Built target ctrl_interface__rosidl_generator_c
+[1.352s] [ 29%] Built target ctrl_interface__rosidl_typesupport_introspection_c
+[1.363s] [ 38%] Built target ctrl_interface__rosidl_typesupport_fastrtps_c
+[1.383s] [ 47%] Built target ctrl_interface__rosidl_typesupport_fastrtps_cpp
+[1.659s] [ 55%] Built target ctrl_interface__rosidl_typesupport_c
+[1.696s] [ 64%] Built target ctrl_interface__rosidl_typesupport_introspection_cpp
+[1.701s] [ 73%] Built target ctrl_interface__rosidl_typesupport_cpp
+[1.809s] Traceback (most recent call last):
+[1.810s]   File "/home/asme/ros_ws/build/ctrl_interface/ament_cmake_python/ctrl_interface/setup.py", line 1, in <module>
+[1.811s]     from setuptools import find_packages
+[1.813s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 15, in <module>
+[1.815s]     import setuptools.version
+[1.816s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[1.817s]     from ._importlib import metadata
+[1.818s]   File "/usr/lib/python3/dist-packages/setuptools/_importlib.py", line 45, in <module>
+[1.819s] gmake[2]: *** [CMakeFiles/ctrl_interface.dir/build.make:116: CMakeFiles/ctrl_interface.dir/depend] Interrupt
+[1.820s]     import importlib.metadata as metadata  # noqa: F401
+[1.822s]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.824s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 19, in <module>
+[1.826s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/ctrl_interface.dir/all] Interrupt
+[1.828s]     from . import _adapters, _meta
+[1.830s]   File "/usr/lib/python3.12/importlib/metadata/_adapters.py", line 5, in <module>
+[1.831s]     import email.message
+[1.833s]   File "/usr/lib/python3.12/email/message.py", line 15, in <module>
+[1.834s]     from email import utils
+[1.836s]   File "/usr/lib/python3.12/email/utils.py", line 33, in <module>
+[1.837s]     from email._parseaddr import quote
+[1.838s]   File "/usr/lib/python3.12/email/_parseaddr.py", line 16, in <module>
+[1.840s]     import time, calendar
+[1.841s]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+[1.843s]   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+[1.844s]   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+[1.846s]   File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+[1.847s]   File "<frozen importlib._bootstrap_external>", line 1124, in get_code
+[1.848s]   File "<frozen importlib._bootstrap_external>", line 753, in _compile_bytecode
+[1.850s] KeyboardInterrupt
+[1.928s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_ctrl_interface_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_ctrl_interface_egg] Interrupt
+[1.929s] gmake[1]: *** [CMakeFiles/Makefile2:478: CMakeFiles/ament_cmake_python_build_ctrl_interface_egg.dir/all] Interrupt
+[1.931s] gmake: *** [Makefile:146: all] Interrupt
+[1.943s] Invoked command in '/home/asme/ros_ws/build/ctrl_interface' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asme/ros_ws/install/puckPack:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/asme/ros_ws/build/ctrl_interface -- -j4 -l4

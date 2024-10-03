@@ -1,0 +1,54 @@
+[0.051s] Invoking command in '/home/asme/ros_ws/build/ctrl_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/asme/ros_ws/src/ctrl_interface -DCMAKE_INSTALL_PREFIX=/home/asme/ros_ws/install/ctrl_interface
+[0.116s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.742s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.836s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.849s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.867s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.887s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.997s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.037s] -- Found rosidl_adapter: 4.6.3 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.707s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.708s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.708s]   ctrl_interface --arguments-file
+[1.708s]   /home/asme/ros_ws/build/ctrl_interface/rosidl_adapter__arguments__ctrl_interface.json
+[1.708s]   --output-dir
+[1.708s]   /home/asme/ros_ws/build/ctrl_interface/rosidl_adapter/ctrl_interface
+[1.708s]   --output-file
+[1.708s]   /home/asme/ros_ws/build/ctrl_interface/rosidl_adapter/ctrl_interface.idls)
+[1.708s]   returned error code 1:
+[1.708s] 
+[1.708s]   Traceback (most recent call last):
+[1.709s] 
+[1.709s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.709s]     File "<frozen runpy>", line 88, in _run_code
+[1.709s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.709s]       sys.exit(main())
+[1.709s]                ^^^^^^
+[1.709s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.709s]       abs_idl_file = convert_to_idl(
+[1.709s]                      ^^^^^^^^^^^^^^^
+[1.709s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.709s]       return convert_msg_to_idl(
+[1.709s]              ^^^^^^^^^^^^^^^^^^^
+[1.710s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.710s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.710s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.710s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[1.710s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[1.711s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.712s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[1.713s]       self.base_type = BaseType(
+[1.713s]                        ^^^^^^^^^
+[1.714s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[1.714s]       raise InvalidResourceName(
+[1.715s] 
+[1.715s]   rosidl_adapter.parser.InvalidResourceName: 'ctrl_interface' is an invalid
+[1.716s]   message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.717s] 
+[1.718s] Call Stack (most recent call first):
+[1.719s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.720s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[1.720s] 
+[1.721s] [0m
+[1.722s] -- Configuring incomplete, errors occurred!
+[1.741s] Invoked command in '/home/asme/ros_ws/build/ctrl_interface' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/asme/ros_ws/src/ctrl_interface -DCMAKE_INSTALL_PREFIX=/home/asme/ros_ws/install/ctrl_interface
