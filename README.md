@@ -69,7 +69,7 @@ The robot's hardware consists of:
 - Actuators for movement and puck collection.
 - **Encoders** for precise localization and odometry.
 
-![Hardware Design](https://via.placeholder.com/800x400.png?text=Hardware+Design+Image)
+![Hardware Design](https://github.com/ahmed-mego/Puck-Collect_Robot/blob/main/img2.JPG)
 
 ---
 
