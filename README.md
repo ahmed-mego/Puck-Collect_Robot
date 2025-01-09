@@ -14,8 +14,7 @@ This repository contains the code, design, and documentation for an autonomous r
 3. [Technologies Used](#technologies-used)
 4. [Hardware Design](#hardware-design)
 5. [Software Architecture](#software-architecture)
-6. [Team](#team)
-7. [License](#license)
+6. [License](#license)
 
 ---
 
@@ -93,16 +92,7 @@ The software is divided into modules:
 5. **Puck Detection and Collection:**
    - **Computer Vision:** Identifies pucks using OpenCV.
    - **Control Algorithms:** Executes actions to collect and deposit pucks.
-
----
-
-## Team
-This project was developed by **Assiut Team** for the **International Robot Challenge**. Our team members are:
-- **Ahmed Mego** - Embedded Systems & Control Algorithms
-- **[Team Member 2]** - Hardware Design & Mechanical Assembly
-- **[Team Member 3]** - Sensor Integration & Testing
-- **[Team Member 4]** - Path Planning & Navigation
-
+     
 ---
 
 ## License
