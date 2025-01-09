@@ -1,6 +1,6 @@
 # Puck-Collect Robot 🚀
 
-![Robot Image](https://via.placeholder.com/800x400.png?text=Robot+Image)
+![Robot Image](https://github.com/ahmed-mego/Puck-Collect_Robot/blob/main/img.jpg)
 
 Welcome to the **Puck-Collect Robot** repository! This project was developed as part of the **International Robot Challenge**, where our team, **Assiut Team**, won **first place**! 🏆
 
