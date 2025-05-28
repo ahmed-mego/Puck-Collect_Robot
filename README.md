@@ -32,11 +32,9 @@ This project was developed for the **International Robot Challenge**, where it d
 ---
 
 ## Features
-- **Autonomous Navigation:** Uses **ROS2 Jazzy** for mapping and localization, with data from **encoders** and sensors.
+- **Autonomous Navigation:** Uses **ROS2 Jazzy** for mapping and localization, with data from **encoders**
 - **Puck Detection:** Leverages **computer vision** (OpenCV) to detect and identify pucks.
 - **Efficient Collection:** Implements mechanisms to collect and store pucks.
-- **Obstacle Avoidance:** Dynamically avoids obstacles while navigating.
-- **Real-Time Decision Making:** Executes algorithms for optimal performance.
 - **UART Communication:** Enables seamless communication between the **Raspberry Pi** and **STM32 microcontroller**.
 
 ---
@@ -45,8 +43,8 @@ This project was developed for the **International Robot Challenge**, where it d
 ### Hardware
 - **Raspberry Pi:** Handles high-level processing, computer vision, and ROS2.
 - **STM32 Microcontroller:** Manages low-level control of motors, sensors, and actuators.
-- **Sensors:** Ultrasonic, IR, IMU, and encoders for localization and navigation.
-- **Actuators:** DC Motors, Servo Motors.
+- **Sensors:** encoders for localization and navigation.
+- **Actuators:** DC Motors, Stepper Motors.
 - **Power Supply:** LiPo Battery.
 - **Chassis:** Custom-designed for stability and maneuverability.
 
@@ -64,7 +62,6 @@ The robot's hardware includes:
 - A robust chassis for stability and maneuverability.
 - **Raspberry Pi** for high-level processing and ROS2.
 - **STM32 Microcontroller** for low-level motor and sensor control.
-- Sensor arrays for puck detection and obstacle avoidance.
 - Actuators for movement and puck collection.
 - **Encoders** for precise localization and odometry.
 
@@ -80,16 +77,16 @@ The software is divided into modules:
    - Communicates with the STM32 via **UART protocol**.
 
 2. **STM32 (Low-Level Control):**
-   - Controls motors, sensors, and actuators.
+   - Controls motors, sensors.
    - Implements PID control for smooth movement.
    - Sends sensor data (e.g., encoder readings) to the Raspberry Pi.
 
 3. **Communication:**
    - **UART Protocol:** Facilitates real-time data exchange between Raspberry Pi and STM32.
-   - Data includes motor commands, sensor readings, and status updates.
+   - Data includes motor commands.
 
 4. **Mapping and Localization:**
-   - Uses **ROS2 Jazzy** with encoder and sensor data to create a map of the arena and localize the robot.
+   - Uses **ROS2 Jazzy** with encoder to create a map of the arena and localize the robot.
 
 5. **Puck Detection and Collection:**
    - **Computer Vision:** Identifies pucks using OpenCV.
